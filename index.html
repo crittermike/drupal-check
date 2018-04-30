@@ -83,7 +83,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
         
   
-  <form netlify class="webform-client-form" enctype="multipart/form-data" method="post" id="webform-client-form-1" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-textfield" id="webform-component-name">
+  <form netlify-honeypot="bot-field" netlify class="webform-client-form" enctype="multipart/form-data" method="post" id="webform-client-form-1" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-textfield" id="webform-component-name">
+	<input name="bot-field" style="display: none;">
   <label for="edit-submitted-name">What's your name? <span class="form-required" title="This field is required.">*</span></label>
  <input type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="128" class="form-text required">
 </div>
